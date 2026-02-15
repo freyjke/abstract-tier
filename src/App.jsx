@@ -30,7 +30,7 @@ const TIERS = [
 ];
 
 // Automatically import all images from src/assets/projects
-const projectImages = import.meta.glob('./assets/projects/*.{png,jpg,jpeg,svg,webp}', { eager: true, as: 'url' });
+const projectImages = import.meta.glob('./assets/projects/*.{png,jpg,jpeg,svg,webp,gif}', { eager: true, as: 'url' });
 
 // Create items from the imported images
 const INITIAL_ITEMS = Object.values(projectImages).map((src, index) => ({
